@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Greeting from "./Greeting";
 import Message from "./Message";
+import Button from "./Button";
 
 class App extends React.Component {
   state = { isShow: true }
@@ -23,9 +24,9 @@ class App extends React.Component {
       <div>
         <Greeting greeting={'Hello React'} />
         <Message message={'Happy coding :)'} isShow={this.state.isShow} />
-        <button onClick={this.toggleShow} type="button">
+        <Button onClick={this.toggleShow}>
           Toggle isShow
-        </button>
+        </Button>
       </div>
     );
   }
