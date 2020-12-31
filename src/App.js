@@ -1,12 +1,14 @@
 import React from "react";
 import "./style.css";
+import Greeting from "./Greeting";
+import Message from "./Message";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello React</h1>
-        <p>Happy coding :)</p>
+        <Greeting greeting={'Hello React'} />
+        <Message message={'Happy coding :)'} />
       </div>
     );
   }
