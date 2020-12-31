@@ -16,7 +16,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate(_prevProps, _prevState) {
-    console.log("App: componentDidUpdate");
+    console.log("App: componentDidUpdate", _prevProps, _prevState);
   }
 
   render() {

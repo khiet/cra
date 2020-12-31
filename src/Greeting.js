@@ -6,7 +6,7 @@ class Greeting extends Component {
   }
 
   componentDidUpdate(_prevProps, _prevState) {
-    console.log("Greeting: componentDidUpdate");
+    console.log("Greeting: componentDidUpdate", _prevProps, _prevState);
   }
 
   render() {
